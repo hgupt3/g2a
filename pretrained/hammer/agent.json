@@ -1,0 +1,89 @@
+{
+  "params": {
+    "algo": {
+      "name": "a2c_continuous"
+    },
+    "model": {
+      "name": "continuous_a2c_logstd"
+    },
+    "network": {
+      "name": "actor_critic",
+      "space": {
+        "continuous": {
+          "mu_activation": "None",
+          "sigma_activation": "None",
+          "mu_init": {
+            "name": "const_initializer",
+            "val": 0
+          },
+          "sigma_init": {
+            "name": "const_initializer",
+            "val": -1.6
+          },
+          "fixed_sigma": true
+        }
+      },
+      "mlp": {
+        "activation": "elu",
+        "d2rl": false,
+        "initializer": {
+          "name": "default"
+        },
+        "regularizer": {
+          "name": "None"
+        },
+        "units": [
+          256,
+          128
+        ]
+      },
+      "separate": true
+    },
+    "config": {
+      "name": "ppo",
+      "env_name": "g2a",
+      "multi_gpu": false,
+      "ppo": true,
+      "mixed_precision": false,
+      "normalize_input": true,
+      "normalize_value": true,
+      "normalize_advantage": true,
+      "value_bootstrap": false,
+      "reward_shaper": {
+        "scale_value": 1.0
+      },
+      "schedule_type": "standard",
+      "print_stats": true,
+      "truncate_grads": true,
+      "clip_value": true,
+      "player": {
+        "deterministic": true,
+        "print_stats": false,
+        "games_num": 1
+      },
+      "num_actors": 4096,
+      "horizon_length": 32,
+      "max_epochs": 140,
+      "device": "cuda:0",
+      "device_name": "cuda:0",
+      "learning_rate": 0.0001,
+      "lr_schedule": "adaptive",
+      "critic_coef": 1.0,
+      "bound_loss_type": "regularisation",
+      "bounds_loss_coef": 0.001,
+      "entropy_coef": 0.0,
+      "mini_epochs": 4,
+      "gamma": 0.998,
+      "tau": 0.995,
+      "kl_threshold": 0.008,
+      "grad_norm": 1.0,
+      "e_clip": 0.15,
+      "save_frequency": 0,
+      "save_best_after": 141,
+      "minibatch_size": 16384,
+      "train_dir": "runs/hammer",
+      "full_experiment_name": "ppo"
+    },
+    "seed": 50
+  }
+}

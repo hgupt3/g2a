@@ -1,0 +1,238 @@
+{
+  "patches": [
+    {
+      "pose_wxyz": [
+        -0.06823062165055173,
+        -0.0020636297368577484,
+        0.43349505703052,
+        0.7054544320283689,
+        -0.04580280928037158,
+        0.7052090461998459,
+        -0.05400322352842421
+      ],
+      "translation_bounds_m": [
+        [
+          -0.015,
+          -0.0022942643363019766,
+          -0.015
+        ],
+        [
+          0.003,
+          0.0022942643363019766,
+          0.015
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.35,
+          -0.35,
+          -0.35
+        ],
+        [
+          0.35,
+          0.35,
+          0.35
+        ]
+      ],
+      "name": "handle_0_approach_0"
+    },
+    {
+      "pose_wxyz": [
+        0.048319772144355455,
+        -0.0019319332816703045,
+        0.4440176831012561,
+        0.0001735139833556672,
+        0.005798568523336768,
+        0.9974897114273724,
+        -0.07057352260242652
+      ],
+      "translation_bounds_m": [
+        [
+          -0.015,
+          -0.0022942643363019766,
+          -0.015
+        ],
+        [
+          0.003,
+          0.0022942643363019766,
+          0.015
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.35,
+          -0.35,
+          -0.35
+        ],
+        [
+          0.35,
+          0.35,
+          0.35
+        ]
+      ],
+      "name": "handle_0_approach_1"
+    },
+    {
+      "pose_wxyz": [
+        0.0705776968804065,
+        -0.020265088558857523,
+        0.3169405794201557,
+        0.7052090461998458,
+        -0.054003223528424196,
+        -0.7054544320283689,
+        0.04580280928037158
+      ],
+      "translation_bounds_m": [
+        [
+          -0.015,
+          -0.0022942643363019766,
+          -0.015
+        ],
+        [
+          0.003,
+          0.0022942643363019766,
+          0.015
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.35,
+          -0.35,
+          -0.35
+        ],
+        [
+          0.35,
+          0.35,
+          0.35
+        ]
+      ],
+      "name": "handle_0_approach_2"
+    },
+    {
+      "pose_wxyz": [
+        -0.0459726969145007,
+        -0.02039678501404497,
+        0.30641795334941957,
+        0.9974897114273724,
+        -0.07057352260242652,
+        -0.00017351398335572823,
+        -0.005798568523336764
+      ],
+      "translation_bounds_m": [
+        [
+          -0.015,
+          -0.0022942643363019766,
+          -0.015
+        ],
+        [
+          0.003,
+          0.0022942643363019766,
+          0.015
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.35,
+          -0.35,
+          -0.35
+        ],
+        [
+          0.35,
+          0.35,
+          0.35
+        ]
+      ],
+      "name": "handle_0_approach_3"
+    }
+  ],
+  "object_asset_sha256": "8702c9579640d93ea06e2e75e87b332d333876a8849621a31f7cbd7c19b11941",
+  "calibration": {
+    "body_offset_m": [
+      0,
+      0,
+      -0.205
+    ],
+    "hand_asset_sha256": "1d882f8ec2c18ba39d71768efbbf79da12e647f585830e5f0f305fe53dffae58",
+    "palm": {
+      "contact_root_m": [
+        0.03169958289228309,
+        0.015600001439452171,
+        0.06943667234010145
+      ],
+      "finger_span_m": 0.1337997443770042,
+      "finger_width_m": 0.0429997533355823,
+      "hand_asset_sha256": "1d882f8ec2c18ba39d71768efbbf79da12e647f585830e5f0f305fe53dffae58",
+      "method": "USD palm surface bounds and three finger knuckle transforms"
+    }
+  },
+  "source": {
+    "kind": "geometry",
+    "description": "Area-weighted USD surface slices identify continuous thick handle regions; palm/root placement is derived from LEAP geometry. No human RGB-D extraction was used.",
+    "algorithm": "surface_profile_v1",
+    "settings": {
+      "surface_samples": 48000,
+      "slices": 48,
+      "minimum_slice_points": 12,
+      "cluster_radius_m": 0.007,
+      "minimum_thickness_m": 0.006,
+      "maximum_width_m": 0.07,
+      "minimum_roundness": 0.35,
+      "minimum_handle_span_fraction": 0.6,
+      "approach_clearance_m": 0.003,
+      "outward_search_m": 0.015,
+      "transverse_search_m": 0.015,
+      "angle_range_rad": 0.35,
+      "approaches": 4,
+      "maximum_handles": 2,
+      "seed": 0
+    },
+    "handles": [
+      {
+        "center_m": [
+          0.001354380879219362,
+          0.004279197817888634,
+          0.3730214828979299
+        ],
+        "axis": [
+          0.011592515872122455,
+          0.9899715090211303,
+          -0.14079071312477068
+        ],
+        "span_m": 0.08486837529880648,
+        "cross_width_m": [
+          0.048491388480817466,
+          0.024834056784896502
+        ],
+        "longitudinal_interval_m": [
+          -0.03598010062108437,
+          0.0488882746777221
+        ],
+        "profile_count": 32
+      }
+    ],
+    "working_end": {
+      "point_m": [
+        0.0010555446281685047,
+        -0.05052703761843588,
+        0.029515374383073046
+      ],
+      "bounds_m": [
+        [
+          -0.0070331677580519805,
+          -0.0676229404973755,
+          -0.000514338122177609
+        ],
+        [
+          0.011101188941896004,
+          -0.02360455280542948,
+          0.048585133649424475
+        ]
+      ],
+      "method": "surface centroid of terminal segment opposite longest narrow handle",
+      "semantic_use_verified": false
+    }
+  },
+  "schema_version": 1,
+  "frame": "object_body",
+  "perturbation_frame": "wrist_local"
+}

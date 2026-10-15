@@ -1,0 +1,28 @@
+{
+  "name": "knife",
+  "object_asset": "../assets/objects/knife.usd",
+  "trajectory": "../data/knife/trajectory.npz",
+  "mass": 0.157,
+  "body_offset": [
+    0,
+    0,
+    -0.17
+  ],
+  "force": [
+    0,
+    0,
+    6
+  ],
+  "resistance": 20,
+  "force_interval": [
+    7,
+    29.5
+  ],
+  "area_path": "../areas/knife.json",
+  "force_point": [
+    -0.000509,
+    -0.003138,
+    0.027878
+  ],
+  "contact_objects": []
+}

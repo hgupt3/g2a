@@ -1,0 +1,28 @@
+{
+  "name": "saw",
+  "object_asset": "../assets/objects/saw.usd",
+  "trajectory": "../data/saw/trajectory.npz",
+  "mass": 0.385,
+  "body_offset": [
+    0,
+    0,
+    -0.205
+  ],
+  "force": [
+    0,
+    0,
+    6
+  ],
+  "resistance": 10,
+  "force_interval": [
+    10,
+    30
+  ],
+  "area_path": "../areas/saw.json",
+  "force_point": [
+    0.001056,
+    -0.050527,
+    0.029515
+  ],
+  "contact_objects": []
+}

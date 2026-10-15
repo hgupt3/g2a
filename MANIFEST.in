@@ -1,0 +1,19 @@
+include README.md
+include CITATION.cff
+include .gitattributes
+include THIRD_PARTY_NOTICES.md
+recursive-include licenses *.txt
+recursive-include g2a/resources *
+recursive-include docs *.md
+recursive-include examples *.json
+recursive-include scripts *.py *.sh
+prune tests
+recursive-include pretrained *.md *.json *.pt *.pth
+prune runs
+prune release
+prune artifacts
+prune .deps
+prune .venv
+prune build
+prune dist
+global-exclude __pycache__ *.py[cod]

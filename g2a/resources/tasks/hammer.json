@@ -1,0 +1,49 @@
+{
+  "name": "hammer",
+  "object_asset": "../assets/objects/hammer.usd",
+  "trajectory": "../data/hammer/trajectory.npz",
+  "mass": 0.514,
+  "body_offset": [
+    0,
+    0,
+    -0.15
+  ],
+  "force": [
+    0,
+    0,
+    0
+  ],
+  "resistance": 0,
+  "force_interval": [
+    6,
+    12
+  ],
+  "area_path": "../areas/hammer.json",
+  "force_point": [
+    -0.000579,
+    -0.003302,
+    0.015309
+  ],
+  "contact_objects": [
+    {
+      "name": "nail_proxy",
+      "size": [
+        0.008,
+        0.008,
+        0.02
+      ],
+      "position": [
+        0.0496,
+        -0.292,
+        0.834296
+      ],
+      "euler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "friction": 1.0,
+      "description": "Defined fixed nail contact proxy, not a measured real nail. XY lies in the recorded strike footprint. Top z=0.844296m is 2mm above the lowest hammer mesh surface in that footprint during 8-12s of the rebased trajectory (area-weighted surface sampling, seed61, 140000 points). The fixed collider also loads later strokes; it does not model a nail sinking into material."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schema_version": 2,
+  "task": "scoop",
+  "task_fingerprint": "d8a449682b55ae45ed9523a56aa8f37975278772b5994109fad2ee3988b92829",
+  "joint_names": [
+    "a_0",
+    "a_1",
+    "a_2",
+    "a_3",
+    "a_4",
+    "a_5",
+    "a_6",
+    "a_7",
+    "a_8",
+    "a_9",
+    "a_10",
+    "a_11",
+    "a_12",
+    "a_13",
+    "a_14",
+    "a_15"
+  ],
+  "action_dim": 22,
+  "observation_dim": 186,
+  "observation_fields": [
+    [
+      "joint_position",
+      16
+    ],
+    [
+      "joint_velocity",
+      16
+    ],
+    [
+      "joint_target",
+      16
+    ],
+    [
+      "previous_action",
+      22
+    ],
+    [
+      "joint_torque",
+      16
+    ],
+    [
+      "actuator_load_proxy",
+      16
+    ],
+    [
+      "object_pose",
+      9
+    ],
+    [
+      "object_velocity",
+      6
+    ],
+    [
+      "palm_pose",
+      9
+    ],
+    [
+      "palm_velocity",
+      6
+    ],
+    [
+      "object_to_goal",
+      9
+    ],
+    [
+      "goal_velocity",
+      6
+    ],
+    [
+      "object_to_future_goal",
+      9
+    ],
+    [
+      "current_task_wrench",
+      6
+    ],
+    [
+      "expected_task_wrench",
+      6
+    ],
+    [
+      "mass_friction_load",
+      3
+    ],
+    [
+      "phase_and_setup",
+      3
+    ],
+    [
+      "tracking_com_error_palm",
+      3
+    ],
+    [
+      "tracking_orientation_error_palm",
+      3
+    ],
+    [
+      "measured_grip_wrist_offset",
+      6
+    ]
+  ],
+  "control": {
+    "action_mode": "wrist_finger_residual",
+    "wrist_translation": 0.025,
+    "wrist_rotation": 0.3,
+    "joint_residual": 0.1,
+    "joint_speed": 2.0,
+    "action_filter": 0.3,
+    "wrist_linear_speed": 2.0,
+    "wrist_angular_speed": 10.0
+  },
+  "observation": {
+    "position_scale_m": 0.5,
+    "relative_position_scale_m": 0.05,
+    "joint_velocity_scale_rad_s": 12.0,
+    "joint_torque_scale_nm": 1.5,
+    "linear_velocity_scale_m_s": 1.0,
+    "angular_velocity_scale_rad_s": 10.0,
+    "force_scale_n": 10.0,
+    "torque_scale_nm": 1.0,
+    "mass_scale_kg": 1.0,
+    "friction_scale": 1.0,
+    "load_multiplier_scale": 1.0,
+    "future_horizon_s": 0.1,
+    "clip": 10.0,
+    "tracking_features": true,
+    "tracking_position_scale_m": 0.004,
+    "tracking_angle_scale_rad": 0.1
+  },
+  "sensor_sources": {
+    "object_pose_velocity": "measured in the environment frame",
+    "palm_pose_velocity": "measured in the environment frame",
+    "joint_torque": "estimated applied actuator torque, Nm",
+    "actuator_load_proxy": "absolute actuator torque / physical effort limit; not tactile contact",
+    "current_task_wrench": "known or estimated task force/torque in world frame; excludes contact and gravity",
+    "expected_task_wrench": "nominal task load model at the anticipation horizon, world frame",
+    "mass_friction_load": "nominal or estimated context; hidden randomization is not observed"
+  },
+  "control_dt": 0.016666666666666666,
+  "hand_asset_sha256": "1d882f8ec2c18ba39d71768efbbf79da12e647f585830e5f0f305fe53dffae58",
+  "grasp_sha256": "b1d23b7ee7ab1d1974563b2173781381b213bf403af4af2d3d3e661bf9c1bb70",
+  "grasp_fingerprint": "a02fe2c0657b39e3013c7460d4da2ca551cb4e4c35603a25d9b23a023172066b",
+  "discovery_sha256": "bc65db4af0ea3e4b0810b756e4358a2fc928799efd86841dd09e9530a9d3298f",
+  "physics_dt": 0.008333333333333333,
+  "physics": {
+    "fixture_mode": "fixed_joint",
+    "physics_dt_s": 0.008333333333333333,
+    "control_decimation": 2,
+    "env_spacing_m": 2.0,
+    "gravity_m_s2": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "stiffness_nm_rad": 4.0,
+    "damping_nms_rad": 0.15,
+    "joint_effort_limit_nm": 1.5,
+    "joint_velocity_limit_rad_s": 12.0,
+    "joint_position_tolerance_rad": 0.02,
+    "contact_offset_m": 0.002,
+    "max_depenetration_velocity": 1.0,
+    "solver_position_iterations": 64,
+    "solver_velocity_iterations": 8,
+    "enable_external_forces_every_iteration": true,
+    "friction_static": 1.0,
+    "friction_dynamic": 1.0,
+    "restitution": 0.0,
+    "floor_size_m": 1000.0,
+    "floor_z_m": -0.01,
+    "floor_thickness_m": 0.02,
+    "rl_setup_time_s": 0.35,
+    "wrist_position_gain_s_inv": 30.0,
+    "wrist_orientation_gain_s_inv": 30.0
+  },
+  "physics_sha256": "a97ac4c5b1f84e672db49a0d68bb744ef75dccf4b3337d302f5059117f4430e9"
+}

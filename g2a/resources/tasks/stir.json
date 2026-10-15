@@ -1,0 +1,28 @@
+{
+  "name": "stir",
+  "object_asset": "../assets/objects/spoon.usd",
+  "trajectory": "../data/stir/trajectory.npz",
+  "mass": 0.06,
+  "body_offset": [
+    0,
+    0,
+    -0.163
+  ],
+  "force": [
+    0,
+    0,
+    0
+  ],
+  "resistance": 18,
+  "force_interval": [
+    10,
+    35
+  ],
+  "area_path": "../areas/stir.json",
+  "force_point": [
+    -0.00386,
+    0.001126,
+    0.023919
+  ],
+  "contact_objects": []
+}

@@ -1,0 +1,77 @@
+{
+  "control": {
+    "action_mode": "wrist_finger_residual",
+    "joint_residual": 0.1,
+    "wrist_translation": 0.025,
+    "wrist_rotation": 0.3
+  },
+  "observation": {
+    "tracking_features": true,
+    "tracking_position_scale_m": 0.004,
+    "tracking_angle_scale_rad": 0.1
+  },
+  "physics": {
+    "fixture_mode": "fixed_joint",
+    "solver_position_iterations": 64,
+    "solver_velocity_iterations": 8
+  },
+  "search": {
+    "num_envs": 4096,
+    "closing_speed_range_rad_s": [
+      0.3,
+      1.0
+    ],
+    "closing_torque_range_nm": [
+      0.4,
+      0.9
+    ],
+    "closing_torque_mode": "closing_direction",
+    "closing_contact_hold_s": 0.0,
+    "max_wall_time_s": 1200,
+    "thumb_initial_intermediate_rad": 0.8,
+    "iterations": 8
+  },
+  "evaluation": {
+    "max_wall_time_s": 1200,
+    "verification_max_wall_time_s": 1200
+  },
+  "training": {
+    "num_envs": 4096,
+    "epochs": 140,
+    "checkpoint_every_epochs": 10,
+    "horizon": 32,
+    "random_start": true,
+    "minibatch_size": 16384,
+    "max_wall_time_s": 4800,
+    "final_validation_reserve_s": 900,
+    "validation_num_envs": 16,
+    "validation_batches": 2,
+    "validation_seed": 1100,
+    "validation_every_epochs": 40,
+    "validation_max_wall_time_s": 900,
+    "minimum_epochs": 100,
+    "learning_rate": 0.0001,
+    "initial_wrist_log_std": -3.4,
+    "initial_finger_log_std": -4.0,
+    "minimum_log_std": -5.0,
+    "reset_exploration_on_resume": false,
+    "gamma": 0.998,
+    "gae_lambda": 0.995,
+    "learning_rate_schedule": "adaptive",
+    "validation_parallel_batches": true,
+    "selection_tracking_mode": "combined",
+    "selection_min_tracking_gain": 0.02
+  },
+  "reward": {
+    "tracking_kernel": "inverse_quadratic",
+    "position_scale_m": 0.004,
+    "angle_scale_rad": 0.1,
+    "position_weight": 2.0,
+    "angle_weight": 3.0,
+    "failure_penalty": 3000
+  },
+  "collision": {
+    "max_tool_penetration_m": 0.005,
+    "max_self_penetration_m": 0.005
+  }
+}

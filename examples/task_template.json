@@ -1,0 +1,42 @@
+{
+  "name": "my_task",
+  "object_asset": "object.usd",
+  "trajectory": "trajectory.npz",
+  "mass": 0.2,
+  "body_offset": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "initial_position": [
+    0.0,
+    0.0,
+    0.7
+  ],
+  "initial_euler": [
+    0.0,
+    1.5707963267948966,
+    0.0
+  ],
+  "source_fps": 30.0,
+  "smoothing_window": 5,
+  "force": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "resistance": 0.0,
+  "max_resistance": 3.0,
+  "force_interval": [
+    0.0,
+    1000.0
+  ],
+  "area_path": "area.json",
+  "force_point": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "contact_objects": [],
+  "force_frame": "object"
+}

@@ -1,0 +1,47 @@
+# Runtime sizes, budgets, optimizer scales and exploration are populated from
+# ExperimentSpec.training in rl.ppo_config, including the learning-rate
+# schedule and entropy coefficient. This file defines algorithm choices.
+params:
+  algo:
+    name: a2c_continuous
+  model:
+    name: continuous_a2c_logstd
+  network:
+    name: actor_critic
+    space:
+      continuous:
+        mu_activation: "None"
+        sigma_activation: "None"
+        mu_init:
+          name: const_initializer
+          val: 0
+        sigma_init:
+          name: const_initializer
+        fixed_sigma: true
+    mlp:
+      activation: elu
+      d2rl: false
+      initializer:
+        name: default
+      regularizer:
+        name: None
+  config:
+    name: g2a
+    env_name: g2a
+    multi_gpu: false
+    ppo: true
+    mixed_precision: false
+    normalize_input: true
+    normalize_value: true
+    normalize_advantage: true
+    value_bootstrap: false
+    reward_shaper:
+      scale_value: 1.0
+    schedule_type: standard
+    print_stats: true
+    truncate_grads: true
+    clip_value: true
+    player:
+      deterministic: true
+      print_stats: false
+      games_num: 1

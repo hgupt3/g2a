@@ -1,0 +1,334 @@
+{
+  "contract": {
+    "schema_version": 2,
+    "task": "knife",
+    "task_fingerprint": "9314e35ac9449b064c55f17d9cf8757ab4305f6b0312038ec2ee53db88d5ad68",
+    "joint_names": [
+      "a_0",
+      "a_1",
+      "a_2",
+      "a_3",
+      "a_4",
+      "a_5",
+      "a_6",
+      "a_7",
+      "a_8",
+      "a_9",
+      "a_10",
+      "a_11",
+      "a_12",
+      "a_13",
+      "a_14",
+      "a_15"
+    ],
+    "action_dim": 22,
+    "observation_dim": 186,
+    "observation_fields": [
+      [
+        "joint_position",
+        16
+      ],
+      [
+        "joint_velocity",
+        16
+      ],
+      [
+        "joint_target",
+        16
+      ],
+      [
+        "previous_action",
+        22
+      ],
+      [
+        "joint_torque",
+        16
+      ],
+      [
+        "actuator_load_proxy",
+        16
+      ],
+      [
+        "object_pose",
+        9
+      ],
+      [
+        "object_velocity",
+        6
+      ],
+      [
+        "palm_pose",
+        9
+      ],
+      [
+        "palm_velocity",
+        6
+      ],
+      [
+        "object_to_goal",
+        9
+      ],
+      [
+        "goal_velocity",
+        6
+      ],
+      [
+        "object_to_future_goal",
+        9
+      ],
+      [
+        "current_task_wrench",
+        6
+      ],
+      [
+        "expected_task_wrench",
+        6
+      ],
+      [
+        "mass_friction_load",
+        3
+      ],
+      [
+        "phase_and_setup",
+        3
+      ],
+      [
+        "tracking_com_error_palm",
+        3
+      ],
+      [
+        "tracking_orientation_error_palm",
+        3
+      ],
+      [
+        "measured_grip_wrist_offset",
+        6
+      ]
+    ],
+    "control": {
+      "action_mode": "wrist_finger_residual",
+      "wrist_translation": 0.025,
+      "wrist_rotation": 0.3,
+      "joint_residual": 0.1,
+      "joint_speed": 2.0,
+      "action_filter": 0.3,
+      "wrist_linear_speed": 2.0,
+      "wrist_angular_speed": 10.0
+    },
+    "observation": {
+      "position_scale_m": 0.5,
+      "relative_position_scale_m": 0.05,
+      "joint_velocity_scale_rad_s": 12.0,
+      "joint_torque_scale_nm": 1.5,
+      "linear_velocity_scale_m_s": 1.0,
+      "angular_velocity_scale_rad_s": 10.0,
+      "force_scale_n": 10.0,
+      "torque_scale_nm": 1.0,
+      "mass_scale_kg": 1.0,
+      "friction_scale": 1.0,
+      "load_multiplier_scale": 1.0,
+      "future_horizon_s": 0.1,
+      "clip": 10.0,
+      "tracking_features": true,
+      "tracking_position_scale_m": 0.004,
+      "tracking_angle_scale_rad": 0.1
+    },
+    "sensor_sources": {
+      "object_pose_velocity": "measured in the environment frame",
+      "palm_pose_velocity": "measured in the environment frame",
+      "joint_torque": "estimated applied actuator torque, Nm",
+      "actuator_load_proxy": "absolute actuator torque / physical effort limit; not tactile contact",
+      "current_task_wrench": "known or estimated task force/torque in world frame; excludes contact and gravity",
+      "expected_task_wrench": "nominal task load model at the anticipation horizon, world frame",
+      "mass_friction_load": "nominal or estimated context; hidden randomization is not observed"
+    },
+    "control_dt": 0.016666666666666666,
+    "hand_asset_sha256": "1d882f8ec2c18ba39d71768efbbf79da12e647f585830e5f0f305fe53dffae58",
+    "grasp_sha256": "d585f4b85cd8a3a831cf865eadbeee655787e009c48fe2714b680fdfba783e27",
+    "grasp_fingerprint": "a02fe2c0657b39e3013c7460d4da2ca551cb4e4c35603a25d9b23a023172066b",
+    "discovery_sha256": "35db7840ba9898fd9a1d772bd6406103b4291307229e2258e7ae1f4cb6752a40",
+    "physics_dt": 0.008333333333333333,
+    "physics": {
+      "fixture_mode": "fixed_joint",
+      "physics_dt_s": 0.008333333333333333,
+      "control_decimation": 2,
+      "env_spacing_m": 2.0,
+      "gravity_m_s2": [
+        0.0,
+        0.0,
+        -9.81
+      ],
+      "stiffness_nm_rad": 4.0,
+      "damping_nms_rad": 0.15,
+      "joint_effort_limit_nm": 1.5,
+      "joint_velocity_limit_rad_s": 12.0,
+      "joint_position_tolerance_rad": 0.02,
+      "contact_offset_m": 0.002,
+      "max_depenetration_velocity": 1.0,
+      "solver_position_iterations": 64,
+      "solver_velocity_iterations": 8,
+      "enable_external_forces_every_iteration": true,
+      "friction_static": 1.0,
+      "friction_dynamic": 1.0,
+      "restitution": 0.0,
+      "floor_size_m": 1000.0,
+      "floor_z_m": -0.01,
+      "floor_thickness_m": 0.02,
+      "rl_setup_time_s": 0.35,
+      "wrist_position_gain_s_inv": 30.0,
+      "wrist_orientation_gain_s_inv": 30.0
+    },
+    "physics_sha256": "a97ac4c5b1f84e672db49a0d68bb744ef75dccf4b3337d302f5059117f4430e9"
+  },
+  "sha256": "d0e12b67ea12fa0d0a78842407e48bee3bce88c9ab1295519d7735ef6f849d47",
+  "controller_kind": "learned_ppo",
+  "selected_epoch": 120,
+  "inference": {
+    "computation": "actor only",
+    "samples_actions": false,
+    "evaluates_critic": false
+  },
+  "joint_limits": {
+    "lower": [
+      -1.0470000505447388,
+      -0.3140000104904175,
+      -0.5059999227523804,
+      -0.3659999966621399,
+      -1.0470000505447388,
+      -0.3140000104904175,
+      -0.5059999227523804,
+      -0.3659999966621399,
+      -1.0470000505447388,
+      -0.3140000104904175,
+      -0.5059999227523804,
+      -0.3659999966621399,
+      -0.3490000069141388,
+      -0.4699999690055847,
+      -1.2000000476837158,
+      -1.340000033378601
+    ],
+    "upper": [
+      1.0470000505447388,
+      2.2300000190734863,
+      1.8849998712539673,
+      2.0419998168945312,
+      1.0470000505447388,
+      2.2300000190734863,
+      1.8849998712539673,
+      2.0419998168945312,
+      1.0470000505447388,
+      2.2300000190734863,
+      1.8849998712539673,
+      2.0419998168945312,
+      2.0940001010894775,
+      2.442999839782715,
+      1.8999998569488525,
+      1.8799998760223389
+    ],
+    "effort_nm": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5
+    ]
+  },
+  "nominal_context": {
+    "mass_kg": 0.157,
+    "friction": 1.0,
+    "load_multiplier": 1.0
+  },
+  "object_physics": {
+    "mass_kg": 0.157,
+    "center_of_mass_in_body_m": [
+      -0.00013955854702790571,
+      0.002318582079514937,
+      0.20963005143289584
+    ],
+    "inertia_in_body_kg_m2": [
+      [
+        0.0008968656757831872,
+        -1.0977566795814612e-06,
+        -9.109965682489658e-07
+      ],
+      [
+        -1.0977566795814612e-06,
+        0.0008806143212866704,
+        -4.5468231095101204e-05
+      ],
+      [
+        -9.109965682489658e-07,
+        -4.5468231095101204e-05,
+        2.4701490913722616e-05
+      ]
+    ],
+    "inertia_method": "convex_hull_uniform_density",
+    "inertia_density": "uniform",
+    "contact_load_point_in_body_m": [
+      -0.000509,
+      -0.003138,
+      0.027878
+    ],
+    "contact_proxy_names": [],
+    "domain_randomization": {
+      "enabled": true,
+      "friction_buckets": 64,
+      "mass_range": [
+        0.7,
+        1.3
+      ],
+      "friction_range": [
+        0.7,
+        1.3
+      ],
+      "load_range": [
+        0.7,
+        1.3
+      ]
+    },
+    "external_wrench_frame": "world wrench recomposed from the current link pose each physics substep",
+    "wrench_composer_pose_cache": "refreshed before every global wrench write",
+    "physx_mass_kg": 0.15700000524520874,
+    "physx_com_in_body_m": [
+      -0.00013955854228697717,
+      0.0023185820318758488,
+      0.2096300572156906
+    ],
+    "physx_com_orientation_in_body_wxyz": [
+      -0.7060481309890747,
+      0.04526955634355545,
+      0.7066718935966492,
+      0.007847107946872711
+    ],
+    "physx_inertia_matrix": [
+      [
+        0.0008968657348304987,
+        -1.0977601050399244e-06,
+        -9.109212442126591e-07
+      ],
+      [
+        -1.0977673809975386e-06,
+        0.0008806143887341022,
+        -4.546823402051814e-05
+      ],
+      [
+        -9.109210168389836e-07,
+        -4.546823038253933e-05,
+        2.4701494112377986e-05
+      ]
+    ],
+    "physx_mesh_properties_verified": true
+  },
+  "grasp_index": 0
+}

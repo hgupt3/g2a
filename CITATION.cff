@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the Grasp to Act paper."
+title: "Grasp to Act: Dexterous Grasping for Tool Use in Dynamic Settings"
+type: software
+version: 0.3.0
+authors:
+  - family-names: Gupta
+    given-names: Harsh
+  - family-names: Mirzaee
+    given-names: Mohammad Amin
+  - family-names: Yuan
+    given-names: Wenzhen
+preferred-citation:
+  type: article
+  title: "Grasp to Act: Dexterous Grasping for Tool Use in Dynamic Settings"
+  authors:
+    - family-names: Gupta
+      given-names: Harsh
+    - family-names: Mirzaee
+      given-names: Mohammad Amin
+    - family-names: Yuan
+      given-names: Wenzhen
+  year: 2026
+  journal: arXiv
+  doi: 10.48550/arXiv.2602.20466
+  url: https://arxiv.org/abs/2602.20466

@@ -1,0 +1,29 @@
+{
+  "name": "scoop",
+  "object_asset": "../assets/objects/spoon.usd",
+  "trajectory": "../data/scoop/trajectory.npz",
+  "mass": 0.06,
+  "body_offset": [
+    0,
+    0,
+    -0.163
+  ],
+  "force": [
+    0,
+    0,
+    -2
+  ],
+  "resistance": 12,
+  "force_interval": [
+    7,
+    27
+  ],
+  "area_path": "../areas/scoop.json",
+  "force_point": [
+    -0.00386,
+    0.001126,
+    0.023919
+  ],
+  "contact_objects": [],
+  "force_frame": "world"
+}

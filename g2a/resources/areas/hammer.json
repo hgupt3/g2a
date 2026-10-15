@@ -1,0 +1,679 @@
+{
+  "patches": [
+    {
+      "pose_wxyz": [
+        0.09686993240923793,
+        0.09232589803324776,
+        0.18552188776346354,
+        0.000996407394503491,
+        -0.0016856574536350697,
+        0.6764064450720028,
+        -0.736525957992187
+      ],
+      "translation_bounds_m": [
+        [
+          -0.01,
+          -0.02425994983811717,
+          -0.008
+        ],
+        [
+          0.01,
+          0.02425994983811717,
+          0.008
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.12,
+          -0.12,
+          -0.12
+        ],
+        [
+          0.12,
+          0.12,
+          0.12
+        ]
+      ],
+      "name": "functional_palm_side_-1_headward_upper_pad_0_0"
+    },
+    {
+      "pose_wxyz": [
+        0.09682874924811105,
+        0.10303690493543487,
+        0.18460875618964884,
+        0.000996407394503491,
+        -0.0016856574536350697,
+        0.6764064450720028,
+        -0.736525957992187
+      ],
+      "translation_bounds_m": [
+        [
+          -0.01,
+          -0.02425994983811717,
+          -0.008
+        ],
+        [
+          0.01,
+          0.02425994983811717,
+          0.008
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.12,
+          -0.12,
+          -0.12
+        ],
+        [
+          0.12,
+          0.12,
+          0.12
+        ]
+      ],
+      "name": "functional_palm_side_-1_headward_upper_pad_0_1"
+    },
+    {
+      "pose_wxyz": [
+        0.08213371545178592,
+        0.09227066422088388,
+        0.18553861509206954,
+        0.000996407394503491,
+        -0.0016856574536350697,
+        0.6764064450720028,
+        -0.736525957992187
+      ],
+      "translation_bounds_m": [
+        [
+          -0.01,
+          -0.02425994983811717,
+          -0.008
+        ],
+        [
+          0.01,
+          0.02425994983811717,
+          0.008
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.12,
+          -0.12,
+          -0.12
+        ],
+        [
+          0.12,
+          0.12,
+          0.12
+        ]
+      ],
+      "name": "functional_palm_side_-1_headward_upper_pad_1_0"
+    },
+    {
+      "pose_wxyz": [
+        0.08209253229065905,
+        0.102981671123071,
+        0.18462548351825483,
+        0.000996407394503491,
+        -0.0016856574536350697,
+        0.6764064450720028,
+        -0.736525957992187
+      ],
+      "translation_bounds_m": [
+        [
+          -0.01,
+          -0.02425994983811717,
+          -0.008
+        ],
+        [
+          0.01,
+          0.02425994983811717,
+          0.008
+        ]
+      ],
+      "rotation_bounds_rad": [
+        [
+          -0.12,
+          -0.12,
+          -0.12
+        ],
+        [
+          0.12,
+          0.12,
+          0.12
+        ]
+      ],
+      "name": "functional_palm_side_-1_headward_upper_pad_1_1"
+    }
+  ],
+  "object_asset_sha256": "f35c65337d120b99501b5647d55aac8f9768a3a93673d12039749cc614410cc2",
+  "calibration": {
+    "body_offset_m": [
+      0,
+      0,
+      -0.15
+    ],
+    "hand_asset_sha256": "1d882f8ec2c18ba39d71768efbbf79da12e647f585830e5f0f305fe53dffae58",
+    "palm": {
+      "contact_root_m": [
+        0.03169958289228309,
+        0.015600001439452171,
+        0.06943667234010145
+      ],
+      "finger_span_m": 0.1337997443770042,
+      "finger_width_m": 0.0429997533355823,
+      "hand_asset_sha256": "1d882f8ec2c18ba39d71768efbbf79da12e647f585830e5f0f305fe53dffae58",
+      "method": "USD palm surface bounds and three finger knuckle transforms",
+      "pinch_centers_root_m": [
+        [
+          0.10616742191701634,
+          0.015200004317148987,
+          0.07629496014950041
+        ],
+        [
+          0.09720703770236906,
+          0.006368210657373902,
+          0.056871704591755584
+        ],
+        [
+          0.08247070773881822,
+          0.0007448116184635337,
+          0.03998409508628664
+        ],
+        [
+          0.06529957754418227,
+          -0.0010522150438500842,
+          0.028293674510894366
+        ]
+      ],
+      "workspace_evidence": {
+        "method": "midpoint of middle/thumb fingertip geometry under USD forward kinematics",
+        "zero_angle_max_transform_error": 1.4785242760402394e-07,
+        "reference_configurations": [
+          {
+            "positive_limit_fraction": 0.4,
+            "joint_positions_rad": [
+              0.0,
+              0.8919999744594671,
+              0.7539999735144103,
+              0.8167999751795689,
+              0.0,
+              0.8919999744594671,
+              0.7539999735144103,
+              0.8167999751795689,
+              0.0,
+              0.8919999744594671,
+              0.7539999735144103,
+              0.8167999751795689,
+              1.0470000112227411,
+              0.9771999838429475,
+              0.7599999689239153,
+              0.7519999395357608
+            ],
+            "pad_centers_root_m": {
+              "middle": [
+                0.1085000673453408,
+                0.0007002511221573231,
+                0.10461726828557057
+              ],
+              "thumb": [
+                0.10383477648869188,
+                0.029699757512140653,
+                0.04797265201343024
+              ]
+            },
+            "tip_link_poses_root_m": {
+              "middle": [
+                0.09652938183040155,
+                0.015200251403370252,
+                0.12090361494218474,
+                0.6667711917478935,
+                0.6667726192852687,
+                -0.23540503900704063,
+                0.23540373751631452
+              ],
+              "thumb": [
+                0.08714978301227855,
+                0.05342544990312637,
+                0.045842344028103554,
+                0.9159938924861069,
+                -0.28458732124759745,
+                -0.06738762645810756,
+                0.2746345814234064
+              ]
+            },
+            "pad_separation_m": 0.06380712234741386
+          },
+          {
+            "positive_limit_fraction": 0.5,
+            "joint_positions_rad": [
+              0.0,
+              1.1149999680743339,
+              0.9424999668930129,
+              1.020999968974461,
+              0.0,
+              1.1149999680743339,
+              0.9424999668930129,
+              1.020999968974461,
+              0.0,
+              1.1149999680743339,
+              0.9424999668930129,
+              1.020999968974461,
+              1.0470000112227411,
+              1.2214999798036843,
+              0.949999961154894,
+              0.9399999244197009
+            ],
+            "pad_centers_root_m": {
+              "middle": [
+                0.09900556199822248,
+                0.0007001722886671412,
+                0.07646092499854619
+              ],
+              "thumb": [
+                0.09540851340651564,
+                0.012036249026080663,
+                0.03728248418496498
+              ]
+            },
+            "tip_link_poses_root_m": {
+              "middle": [
+                0.09863892580338114,
+                0.015200159815682325,
+                0.09667004043908924,
+                0.7067543992565772,
+                0.7067558051620565,
+                -0.02229962837874532,
+                0.022297479126075243
+              ],
+              "thumb": [
+                0.08747317992396592,
+                0.039528125428739895,
+                0.0424846869139648,
+                0.9796404692272773,
+                -0.15854949117194755,
+                -0.0710922805332301,
+                0.10056091462323294
+              ]
+            },
+            "pad_separation_m": 0.04094381050843844
+          },
+          {
+            "positive_limit_fraction": 0.6,
+            "joint_positions_rad": [
+              0.0,
+              1.3379999616892007,
+              1.1309999602716154,
+              1.2251999627693533,
+              0.0,
+              1.3379999616892007,
+              1.1309999602716154,
+              1.2251999627693533,
+              0.0,
+              1.3379999616892007,
+              1.1309999602716154,
+              1.2251999627693533,
+              1.0470000112227411,
+              1.4657999757644211,
+              1.139999953385873,
+              1.127999909303641
+            ],
+            "pad_centers_root_m": {
+              "middle": [
+                0.08167052107694928,
+                0.000700123850182274,
+                0.057423688716041255
+              ],
+              "thumb": [
+                0.08327089440068716,
+                0.0007894993867447935,
+                0.022544501456532022
+              ]
+            },
+            "tip_link_poses_root_m": {
+              "middle": [
+                0.09304259922888662,
+                0.015200077754128523,
+                0.07413355354379562,
+                0.6802844146359645,
+                0.6802861717527168,
+                0.19290241931631322,
+                -0.19290540777113993
+              ],
+              "thumb": [
+                0.08584507413434894,
+                0.027058852128918273,
+                0.03475639746239643,
+                0.9948708567051605,
+                -0.04299095951994793,
+                -0.03008285948196868,
+                -0.0864799250906379
+              ]
+            },
+            "pad_separation_m": 0.0349159975748335
+          },
+          {
+            "positive_limit_fraction": 0.7,
+            "joint_positions_rad": [
+              0.0,
+              1.5609999553040674,
+              1.3194999536502179,
+              1.4293999565642455,
+              0.0,
+              1.5609999553040674,
+              1.3194999536502179,
+              1.4293999565642455,
+              0.0,
+              1.5609999553040674,
+              1.3194999536502179,
+              1.4293999565642455,
+              1.0470000112227411,
+              1.710099971725158,
+              1.3299999456168516,
+              1.3159998941875812
+            ],
+            "pad_centers_root_m": {
+              "middle": [
+                0.06218916170187124,
+                0.000700108887076235,
+                0.048669735420540546
+              ],
+              "thumb": [
+                0.06840999338649328,
+                -0.0028045389747764033,
+                0.007917613601248187
+              ]
+            },
+            "tip_link_poses_root_m": {
+              "middle": [
+                0.08112345275195681,
+                0.015200018323967302,
+                0.05574346541431085,
+                0.5898500842770721,
+                0.5898525470094187,
+                0.38996664452014207,
+                -0.38997034121396146
+              ],
+              "thumb": [
+                0.08176311838261222,
+                0.017437574846481743,
+                0.023973347148403025,
+                0.9598993054853154,
+                0.048517103062751143,
+                0.0499004942711346,
+                -0.27156832420351235
+              ]
+            },
+            "pad_separation_m": 0.04137289857211397
+          }
+        ],
+        "contact_interpretation": "hypothesized rod center between digits, not a verified contact pocket; unlike surface centers, no object radius is added",
+        "root_body_path": "/leap_right/base",
+        "functional_hand_frame": {
+          "palm_normal_root": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "thumb_side_axis_root": [
+            -0.0,
+            0.9999995088199777,
+            0.0009911406577771495
+          ],
+          "third_axis_root": [
+            0.0,
+            -0.0009911406577771495,
+            0.9999995088199777
+          ],
+          "knuckles_root_m": [
+            [
+              0.01869995705783367,
+              0.060999996960163116,
+              0.09099987894296646
+            ],
+            [
+              0.018699955195188522,
+              0.015600001439452171,
+              0.09089988470077515
+            ],
+            [
+              0.018699955195188522,
+              -0.029799994081258774,
+              0.09090988337993622
+            ]
+          ],
+          "thumb_base_root_m": [
+            0.02159957028925419,
+            0.036799997091293335,
+            0.028699859976768494
+          ],
+          "method": "finger-row PCA signed by thumb-base projection; LEAP palm front is root +X, all positions normalized to rigid base"
+        },
+        "enveloping_contact_interpretation": "palm front at mean finger MCP height; add handle radius and approach clearance. Thin-stem enveloping grips need support at the knuckles rather than the lower palm or a fingertip-centroid midpoint."
+      },
+      "enveloping_contact_root_m": [
+        0.03169958289228309,
+        0.015600001439452171,
+        0.09093654900789261
+      ]
+    },
+    "functional_grip": {
+      "thumb_side_axis_root": [
+        -0.0,
+        0.9999995088199777,
+        0.0009911406577771495
+      ],
+      "palm_normal_root": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "working_direction_object": [
+        -0.0008088218374807247,
+        -0.08593416594363551,
+        -0.9963004892756036
+      ],
+      "working_plane_normal_object": [
+        0.9999923314625063,
+        0.003748138953219209,
+        -0.0011351081746513547
+      ],
+      "handle_segment_m": [
+        [
+          -5.273349794594062e-05,
+          0.009567905056469525,
+          0.1634328856368359
+        ],
+        [
+          -1.3476717036099944e-05,
+          0.013738784932347736,
+          0.2117890850066279
+        ]
+      ],
+      "grip_centers_root_m": [
+        [
+          0.09720703770236906,
+          0.004850063105556596,
+          0.08018661067399703
+        ],
+        [
+          0.09720703770236906,
+          0.004850063105556596,
+          0.09093654900789261
+        ],
+        [
+          0.08247070773881822,
+          0.004850063105556596,
+          0.08018661067399703
+        ],
+        [
+          0.08247070773881822,
+          0.004850063105556596,
+          0.09093654900789261
+        ]
+      ],
+      "max_axis_deviation_rad": 0.3,
+      "max_palm_deviation_rad": 0.3,
+      "max_transverse_distance_m": 0.013806248474865699,
+      "opposition": {
+        "body_groups": [
+          [
+            "thumb_dip",
+            "thumb_fingertip"
+          ],
+          [
+            "pip",
+            "dip",
+            "fingertip"
+          ],
+          [
+            "pip_2",
+            "dip_2",
+            "fingertip_2"
+          ],
+          [
+            "pip_3",
+            "dip_3",
+            "fingertip_3"
+          ]
+        ],
+        "minimum_contact_force_n": 0.02,
+        "minimum_contact_fraction": 0.5,
+        "minimum_finger_groups": 2
+      },
+      "contact_segment_m": [
+        [
+          -0.00012046641647152554,
+          0.0023715466117544756,
+          0.08
+        ],
+        [
+          5.407600012890576e-05,
+          0.0209159976852606,
+          0.295
+        ]
+      ],
+      "palm_side": -1,
+      "contact_center_bounds_root_m": [
+        [
+          0.06097083107102707,
+          -0.05129987074904993,
+          0.06943667234010145
+        ],
+        [
+          0.1187069143701602,
+          0.08249987362795427,
+          0.11243642567568377
+        ]
+      ],
+      "handle_center_bounds_root_m": [
+        [
+          0.05898049595572817,
+          -0.014716523531600686,
+          0.06673335936119837
+        ],
+        [
+          0.08048037262351933,
+          0.006783353136190464,
+          0.08823323602898953
+        ]
+      ]
+    }
+  },
+  "source": {
+    "kind": "defined",
+    "description": "Defined headward upper-handle grasp volume with the thumb toward the working head and negative palm side. Hand placement is 30 mm closer to the head along the finger row from the approved upper grip, preserving its height and depth. Actual native contacts, collision, release retention, wrench stability and complete trajectory verification qualify every grasp.",
+    "algorithm": "signed_functional_power_grip_v1",
+    "working_end": {
+      "point_m": [
+        -0.0005793360626855956,
+        -0.003302341324050316,
+        0.015309442585108496
+      ],
+      "semantic_use_verified": false
+    },
+    "working_plane": {
+      "normal_object": [
+        0.9999923314625063,
+        0.003748138953219209,
+        -0.0011351081746513547
+      ],
+      "method": "smallest surface-covariance axis, projected perpendicular to the declared handle segment"
+    },
+    "handle_grip_center_segment_m": [
+      [
+        -5.273349794594062e-05,
+        0.009567905056469525,
+        0.1634328856368359
+      ],
+      [
+        -1.3476717036099944e-05,
+        0.013738784932347736,
+        0.2117890850066279
+      ]
+    ],
+    "settings": {
+      "transverse_search_m": 0.008,
+      "outward_search_m": 0.01,
+      "clearance_m": 0.003,
+      "angle_range_rad": 0.12,
+      "workspace_mode": "opposing_pads"
+    },
+    "orientation_convention": "thumb side toward working end; palm normal aligned with negative working-plane normal; perturb rotations about measured handle center",
+    "physical_handle_segment_m": [
+      [
+        -0.00012046641647152554,
+        0.0023715466117544756,
+        0.08
+      ],
+      [
+        5.407600012890576e-05,
+        0.0209159976852606,
+        0.295
+      ]
+    ],
+    "minimum_finger_span_inside_handle_fraction": 0.8,
+    "workspace_sampling": {
+      "method": "Upper hand pockets centered at measured MCP height and one-quarter pad width below it; palm-normal depths use measured opposing-pad workspace depths",
+      "mcp_height_root_m": 0.09093654900789261,
+      "finger_width_m": 0.0429997533355823,
+      "center_shift_toward_outer_fingers_m": 0.010749938333895575,
+      "pocket_bounds_root_m": [
+        [
+          0.06097083107102707,
+          -0.05129987074904993,
+          0.06943667234010145
+        ],
+        [
+          0.1187069143701602,
+          0.08249987362795427,
+          0.11243642567568377
+        ]
+      ],
+      "hypotheses_only": true,
+      "handle_center_bounds_root_m": [
+        [
+          0.05898049595572817,
+          -0.014716523531600686,
+          0.06673335936119837
+        ],
+        [
+          0.08048037262351933,
+          0.006783353136190464,
+          0.08823323602898953
+        ]
+      ],
+      "headward_hand_shift_m": 0.03,
+      "handle_placement_target_root_m": [
+        0.06973043428962375,
+        -0.003966585197705111,
+        0.07748329769509395
+      ],
+      "handle_placement_tolerance_m": 0.010749938333895575
+    },
+    "contact_region_definition": "Actual distal-group contacts must remain on the physical handle and their opposing midpoint in the upper hand pocket. The physical handle segment midpoint, transformed into the actual hand frame, fixes tool placement independently of the thumb-biased contact distribution.",
+    "physical_contact_segment_definition": "Continuous narrow handle mesh from object Z=0.080 to 0.295 m, excluding the working head. Area-weighted 100000-point native USD surface sampling confirms the newly included Z=0.080 to 0.140 m neck has about 16-18 mm thickness and 25-28 mm transverse width."
+  },
+  "schema_version": 1,
+  "frame": "object_body",
+  "perturbation_frame": "wrist_local"
+}
